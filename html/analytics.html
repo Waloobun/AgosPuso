@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/styles/analytics.css">
+    </head>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="/images/LOGO.png" alt="Logo" width="50" height="50">
+        </div>
+
+        <div class="nav-container">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="history.html" class="nav-item">History</a>
+            <a href="analytics.html" class="nav-item active">Analytics</a>
+            <a href="reports.html" class="nav-item">Reports</a>
+        </div>
+        <div class="user-profile">
+            <img src="/images/6522516.png" alt="User Avatar" class="user-avatar" width="35" height="35">
+            <a class="user-name">Admin</a>
+        </div>
+</header>
+    <body>
+      <div class="patient-container">
+            <div class="Today">
+                <h1>Total Patients Today</h1>
+                <p>132</p>
+            </div>
+            <div class="queue">
+                <h1>Patients Currently in Queue</h1>
+                <p>13 Min</p>
+            </div>
+            <div class="completed">
+                <h1>Completed Consultations</h1>
+                <p>120</p>
+            </div>
+            <div class="AWT">
+                <h1>Average Waiting Time</h1>
+                <p>30 mins</p>
+            </div>
+      </div>
+
+      <div class="patient-per-dep-container">
+        <div class="PpD-header">
+              <h1>Patient per Department (Today)</h1>
+              <canvas id="deptChart"></canvas>
+        <div class="Queue-header">
+              <h1>Queue Analytics</h1>
+              <canvas id="queueChart"></canvas>
+          </div>
+          <div class="patient-card">
+            <div class="patient-item">
+              <div class="circle"></div>
+              <span class="label">New Patients</span>
+            </div>
+            <div class="patient-item">
+              <div class="circle"></div>
+              <span class="label">Returning</span>
+            </div>
+          </div>
+            <div class="recom">
+              <h1>Insights & Recommendations</h1>
+              <p>Peak queue volume observed between 9AM - 11AM.
+                Average waiting time reduced by 10% compared to last week.
+                Recommended adding additional Consult staff during morning shifts.
+              </p>
+            </div>
+          </div>
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                  <script src="/js/PpD.js"></script>
+    </body>
+</html>

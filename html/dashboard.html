@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/styles/dashboard.css">
+    </head>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="/images/LOGO.png" alt="Logo" width="50" height="50">
+        </div>
+
+        <div class="nav-container">
+            <a href="dashboard.html" class="nav-item active">Dashboard</a>
+            <a href="history.html" class="nav-item">History</a>
+            <a href="analytics.html" class="nav-item">Analytics</a>
+            <a href="reports.html" class="nav-item">Reports</a>
+        </div>  
+        <div class="user-profile">
+            <img src="/images/6522516.png" alt="User Avatar" class="user-avatar" width="35" height="35">
+            <a href="" class="user-name">Admin</a>
+</header>
+    <body>
+        <div class="dashboard-container">
+            <div class="Today-Patients-container">
+                <h1>Today Patients</h1>
+                <p>132</p>
+            </div>
+            
+            <div class="AWTime-container">
+                <h1>Average Waiting Time</h1>
+                <p>13 Min</p>
+            </div>
+            <div class="calendar">
+          <div class="calendar-header">
+                <button id="prev">&#10094;</button>
+                <h3 id="monthYear"></h3>
+                <button id="next">&#10095;</button>
+          </div>
+          <div class="calendar-days">
+              <span>Su</span><span>Mo</span><span>Tu</span>
+              <span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+             </div>
+          <div id="calendarDates" class="calendar-dates"></div>
+          <script src="/js/calendar.js"></script>
+        </div>
+        </div>
+        <div class="chart-container"> 
+          <div class="chart-header">
+          <h1>Patient Overview - Consultation</h1>
+          <p>by aged stages</p>
+            <div class="ages">
+              <span class="age child">Child</span>
+              <span class="age adult">Adult</span>
+            </div>
+            <div id="chart" class="bar-chart"></div>
+            <script src="/js/dashboard.js"></script>
+          </div>
+          <div class="recent-container">
+            <h1>Recent Patients</h1>
+            <table class="recent-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Service</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>C1001</td>
+                        <td>Consultation</td>
+                        <td>10:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>RP1001</td>
+                        <td>Refill Prescription</td>
+                        <td>11:00 AM</td>
+                    </tr>
+                    <tr>
+                        <td>E1001</td>
+                        <td>ECG</td>
+                        <td>11:30 AM</td>
+                    </tr>
+                    <tr>
+                        <td>W1001</td>
+                        <td>Warfarin</td>
+                        <td>12:00 PM</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+    </body>
+</html>

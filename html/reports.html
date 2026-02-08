@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/styles/reports.css">
+    </head>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="/images/LOGO.png" alt="Logo" width="50" height="50">
+        </div>
+        
+        <div class="nav-container">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="history.html" class="nav-item">History</a>
+            <a href="analytics.html" class="nav-item">Analytics</a>
+            <a href="reports.html" class="nav-item active">Reports</a>
+        </div>
+        <div class="user-profile">
+            <img src="/images/6522516.png" alt="User Avatar" class="user-avatar" width="35" height="35">
+            <a class="user-name">Admin</a>
+        </div>
+</header>
+    <body>
+      <div class="filter">
+        <label for="today"></label>
+        <select id="today" name="today">
+                <option value="today">Today</option>
+                <option value="this-week">This Week</option>
+                <option value="this-month">This Month</option>
+                <option value="this-year">This Year</option>
+        </select>
+        
+        <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Refill Prescription">Refill Prescription</option>
+                <option value="ECG">ECG</option>
+                <option value="Warfarin">Warfarin</option>
+                <option value="Benzathine">Benzathine</option>
+                <option value="OPD Screening">OPD Screening</option>
+        </select>
+        </div>
+
+        <div class="dashboard">
+          <div class="stats-grid">
+            <div class="card today">
+              <h1>Total Patients</h1>
+              <p>165</p>
+            </div>
+            <div class="card completed">
+              <h1>Completed Consultations</h1>
+              <p>86</p>
+            </div>
+
+            <div class="card queue">
+              <h1>Patients Currently in Queue</h1>
+              <p>15</p>
+            </div>
+            
+            <div class="card awt">
+              <h1>Average Waiting Time</h1>
+              <p>30 minutes</p>
+            </div>
+          </div>
+          <div class="chart-card">
+            <h2>Patient per Department</h2>
+          </div>
+        </div>
+
+        <div class="department">
+          <div class="service-card">
+            <span>Consultation</span>
+            <div class="icon"></div>
+          </div>
+
+          <div class="service-card">
+            <span>OPD Card</span>
+            <div class="icon"></div>
+          </div>
+
+          <div class="service-card">
+            <span>Refill Prescription</span>
+            <div class="icon"></div>
+          </div>
+
+          <div class="service-card">
+            <span>ECG</span>
+            <div class="icon"></div>
+          </div>
+
+          <div class="service-card">
+            <span>Warfarin</span>
+            <div class="icon"></div>
+          </div>
+
+          <div class="service-card">
+            <span>OPD Reschedule</span>
+            <div class="icon"></div>
+          </div>
+
+          <div class="service-card">
+            <span>Benzathine</span>
+            <div class="icon"></div>
+          </div>
+
+          <div class="service-card">
+            <span>OPD Screening</span>
+            <div class="icon"></div>
+          </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/styles/history.css">
+    </head>
+    <header class="top-bar">
+        <div class="logo">
+            <img src="/images/LOGO.png" alt="Logo" width="50" height="50">
+        </div>
+
+        <div class="nav-container">
+            <a href="dashboard.html" class="nav-item">Dashboard</a>
+            <a href="history.html" class="nav-item active">History</a>
+            <a href="analytics.html" class="nav-item">Analytics</a>
+            <a href="reports.html" class="nav-item">Reports</a>
+        </div>
+        <div class="user-profile">
+            <img src="/images/6522516.png" alt="User Avatar" class="user-avatar" width="35" height="35">
+            <a class="user-name">Admin</a>
+        </div>
+</header>
+    <body>
+        <div class="filter">
+        <label for="today"></label>
+        <select id="today" name="today">
+                <option value="today">Today</option>
+                <option value="this-week">This Week</option>
+                <option value="this-month">This Month</option>
+                <option value="this-year">This Year</option>
+        </select>
+        
+        <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="Consultation">Consultation</option>
+                <option value="Refill Prescription">Refill Prescription</option>
+                <option value="ECG">ECG</option>
+                <option value="Warfarin">Warfarin</option>
+                <option value="Benzathine">Benzathine</option>
+                <option value="OPD Screening">OPD Screening</option>
+        </select>
+
+
+        </div>
+
+        <div class="container">
+            <div class="header">
+            <span>Time</span>
+            <span>Department</span>
+            <span>Status</span>
+            <span>Description</span>
+            <span>Progress</span>
+        </div>
+        <div class="history">
+            <div class="history-item">
+                <span>10:00 AM</span>
+                <span>Consultation</span>
+                <span>Completed</span>
+                <span>General check-up and consultation for patient with hypertension.</span>
+                <span class="progress completed">Completed</span>
+            </div>
+            <div class="history-item">
+                <span>11:30 AM</span>
+                <span>Refill Prescription</span>
+                <span>Pending</span>
+                <span>Refill prescription for patient with diabetes mellitus.</span>
+                <span class="progress pending">Pending</span>
+            </div>
+            <div class="history-item">
+                <span>1:00 PM</span>
+                <span>ECG</span>
+                <span>Completed</span>
+                <span>ECG test for patient with chest pain and suspected arrhythmia.</span>
+                <span class="progress completed">Completed</span>
+            </div>
+    </body>
+</html>

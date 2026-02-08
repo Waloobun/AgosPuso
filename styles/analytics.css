@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    font-family: 'Segoe UI', Tahoma, lato, Verdana, sans-serif;
+    display: flex;
+    align-items: flex-start;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, lato, Verdana, sans-serif;
+    background: linear-gradient(135deg, #FFFFFF 0%, #86C0E9 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+}
+
+.nav-container {
+    display: flex;
+    gap: 10px;
+    height: fit-content;
+    align-self: flex-start;
+    background: rgba(255, 255, 255, 0.7) 60%;
+    padding: 8px 12px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.nav-item {
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+.nav-item:hover {
+    background: rgba(56, 126, 218, 0.15);
+}
+
+.nav-item.active {
+    background: linear-gradient(135deg, #6BAEFF, #387EDA);
+    color: #fff;
+}
+
+.user-profile {
+    display: flex;
+    height: fit-content;
+    align-self: flex-start;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.7) 60%;
+    padding: 8px 12px;
+    border-radius: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.user-name {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.2s ease;
+}
+
+.user-name:hover {
+background: rgba(56, 126, 218, 0.15);
+}
+
+.user-name:active {
+    background: linear-gradient(135deg, #6BAEFF, #387EDA);
+    color: #fff;
+}
+
+.patient-container {
+    width: 98.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: -30px;
+}
+
+.Today {
+    width: 400px;
+    background: linear-gradient(135deg, #FFFFFF 20%, #04AFC2 80%);
+    height: 180px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.Today h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Today p {
+    font-size: 55px;
+    align-items: bottom;
+    font-weight: bold;
+    color: #000000;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.queue {
+    width: 400px;
+    background: linear-gradient(135deg, #FFFFFF 20%, #FF2CF1 80%);
+    height: 180px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.queue h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.queue p {
+    font-size: 55px;
+    align-items: bottom;
+    font-weight: bold;
+    color: #000000;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.completed {
+    width: 400px;
+    background: linear-gradient(135deg, #FFFFFF 20%, #00CD00 80%);
+    height: 180px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.completed h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.completed p {
+    font-size: 55px;
+    align-items: bottom;
+    font-weight: bold;
+    color: #000000;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.AWT {
+    width: 400px;
+    background: linear-gradient(135deg, #FFFFFF 20%, #FFD900 80%);
+    height: 180px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.AWT h1 {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.AWT p {
+    font-size: 55px;
+    align-items: bottom;
+    font-weight: bold;
+    color: #000000;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.patient-per-dep-container {
+    display: flex;
+    align-items: start;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    width: 890px;
+    height: 496px;
+    margin-left: 50px;
+    margin-top: -12px;
+}
+
+.PpD-header h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.Queue-header {
+    display: flex;
+    align-items: start;
+    padding: 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    width: 890px;
+    height: 496px;
+    margin-left: 880px;
+    margin-top: -453px;
+}
+
+.Queue-header h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.PpD-header {
+    width: 100%;
+    height: 360px;
+    position: relative;
+}
+
+.queueChart {
+  width: 100%;
+  height: 360px;
+  position: relative;
+}
+
+.patient-card {
+  display: flex;
+  gap: 300px;
+  align-items: center;
+  width: 890px;
+  padding: 20px 40px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: -30px;
+  height: 120px;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.circle {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  flex-shrink: 0;
+}
+
+.label {
+  display: flex; 
+  align-items: center;
+  height: 64px;   
+  line-height: 1; 
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.label {
+  line-height: 1.2;
+}
+
+
+.recom {
+  background: rgb(255, 255, 255, 0.6);
+  height: 120px;
+  padding: 16px;
+  border-radius: 20px;
+  width: 890px;
+  margin-top: -120px;
+  margin-left: 880px;
+}
+
+.recom h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 1px;
+  margin-left: 10px;
+}
+
+.recom p {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-left: 10px;
+  margin-top: -5px;
+}
